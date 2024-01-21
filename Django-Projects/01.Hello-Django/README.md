@@ -6,11 +6,7 @@ This Django project includes a single app with two endpoints:
 
 ## Usage
 
-1. Clone the repository:
-
-    ```bash
-    git clone https://github.com/kirubel23J/hello-django.git
-    ```
+1. Clone the specific repository:
 
 2. Run the project:
 

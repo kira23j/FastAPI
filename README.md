@@ -1,39 +1,63 @@
-# Customer Segmentation Flask App
-# Overview
+# WebTriad Backend API Repository
 
-This Flask app deploys a machine learning customer segmentation model using K-Means clustering. The model takes into account annual income and spending score provided by the mall, classifying customers into different segments. This segmentation can be valuable for targeted marketing and personalized customer engagement strategies.
+This repository contains Python backend API projects built using Django, Flask, and FastAPI. Each project serves as a standalone backend API suitable for various web applications.
 
-## Requirements
-    Python 3.x
-    Flask
-    scikit-learn
-## Installation
-Clone the repository and go to code for this project
-download this repo as zip file and go to code section of this project
+## Project Structure
 
-## Install dependencies:
+- **Django Projects:** Multiple Django projects with unique features and API endpoints.
+- **Flask Projects:** Several Flask projects showcasing different API routes and functionality.
+- **FastAPI Projects:** Multiple FastAPI projects with distinct API routers and implementations.
 
-## Run the Flask app:
+## Getting Started
 
-bash
-```
-Copy code
-flask run
-The app will be available at http://127.0.0.1:5000/ by default.
-```
-Access the app in your web browser.
+1. **Clone the Repository:**
+    ```bash
+    git clone https://github.com/kirubel23J/webtriad.git
+    ```
 
-Fill in the form with the customer's annual income and spending score.
+2. **Navigate to a Project:**
+    ```bash
+    cd django_project_a  # Replace with the desired project directory
+    ```
 
-Click the "Submit" button.
+3. **Set Up Virtual Environment:**
+    ```bash
+    python -m venv venv
+    ```
 
-The app will process the input and display the classification type of the given customer.
+4. **Activate Virtual Environment:**
+    - On Windows:
+        ```bash
+        venv\Scripts\activate
+        ```
+    - On Unix or MacOS:
+        ```bash
+        source venv/bin/activate
+        ```
 
-## Troubleshooting
-If you encounter any issues, please ensure that you have the required dependencies installed and that your Python environment is set up correctly.
+5. **Install Dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-## Acknowledgments
-This app is built using Flask and scikit-learn. Special thanks to the open-source community for their contributions.
+6. **Run the Project:**
+    - For Django:
+        ```bash
+        python manage.py runserver
+        ```
+    - For Flask:
+        ```bash
+        python app_x.py  # Replace with the appropriate Flask project
+        ```
+    - For FastAPI:
+        ```bash
+        uvicorn main_alpha:app --reload  # Replace with the appropriate FastAPI project
+        ```
+
+## Explore and Develop
+
+Feel free to explore and develop your Python backend API projects based on these templates. Each project offers a foundation for building robust backend services.
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+
+This repository is licensed under the [MIT License](LICENSE).
