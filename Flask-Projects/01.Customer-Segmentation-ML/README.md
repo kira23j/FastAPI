@@ -5,11 +5,11 @@
 - Features: Input data, get cluster predictions.
 - Tech Stack: Flask, Scikit-learn.
 ### Usage:
-Clone repo.
-Install dependencies.
-Run python app.py.
-Access http://localhost:5000.
-Input data, get predictions.
-Structure: CSS/JS in static/, HTML in templates/.
-Model: Pre-trained KMeans saved with Pickle.
-Contributions: Welcome!
+- Clone repo.
+- Install dependencies.
+- Run python app.py.
+- Access http://localhost:5000.
+- Input data, get predictions.
+- Structure: CSS/JS in static/, HTML in templates/.
+- Model: Pre-trained KMeans saved with Pickle.
+- Contributions: Welcome!
