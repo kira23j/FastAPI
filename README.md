@@ -1,4 +1,4 @@
-# WebTriad Backend API Repository
+# FastDJ Backend API Repository
 
 This repository contains Python backend API projects built using Django and FastAPI. Each project serves as a standalone backend API suitable for various web applications.
 
