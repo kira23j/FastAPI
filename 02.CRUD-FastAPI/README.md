@@ -1,1 +1,0 @@
-# fast api mysql CRUD operations
