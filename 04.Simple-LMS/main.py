@@ -1,4 +1,4 @@
-from fastapi import FastAPI,Path
+from fastapi import FastAPI,Path,Query
 from pydantic import BaseModel
 from typing import Optional,List
 app=FastAPI()
@@ -10,15 +10,17 @@ class User(BaseModel):
     bio:Optional[str]
 
 @app.get('/users',response_model=List[User])
-def get_user():
+async def get_user():
     return users
 
 @app.post('/users')
-def create_user(user:User):
+async def create_user(user:User):
     users.append(user)
     return "sucess"
 
 @app.get("/users/{id}")
-async def get_user(id:int = Path(...,description="The ID of user to retrieve",gt=2)):
-    return users[id]
+async def get_user(id:int = Path(...,description="The ID of user to retrieve",gt=2),q:str=Query(None,max_length=5)):
+    if id < 0 or id >= len(users):
+        return {"error": "User not found"}
+    return {"user": users[id], "query": q}
 
