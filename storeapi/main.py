@@ -1,5 +1,4 @@
 from fastapi import FastAPI
-from pydantic import BaseModel
 from storeapi.routers.post import router as post_router
 app = FastAPI()
 
