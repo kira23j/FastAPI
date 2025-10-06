@@ -1,0 +1,3 @@
+[submodule "book_store"]
+	path = book_store
+	url = https://github.com/piVentures/book_store
